@@ -7,6 +7,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.*;
 
 public class CommonBase {
 	public static WebDriver driver;
@@ -17,8 +18,8 @@ public class CommonBase {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get(url);
-		driver.manage().window().fullscreen();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+		driver.manage().window().maximize();
 		return driver;
 	}
 	public void scrollToElement(By locator) {
