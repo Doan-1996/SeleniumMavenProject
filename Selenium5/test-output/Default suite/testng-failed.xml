@@ -5,7 +5,7 @@
     <classes>
       <class name="automation.testsuit.BTVN_Day13_TestLogin">
         <methods>
-          <include name="Logout"/>
+          <include name="loginSuccessfully"/>
           <include name="openChromeBrowser"/>
         </methods>
       </class> <!-- automation.testsuit.BTVN_Day13_TestLogin -->

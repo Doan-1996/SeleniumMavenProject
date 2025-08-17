@@ -53,17 +53,13 @@ public class LoginPage_Day13{
 	public void Logout1 () {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	    //wait.until(ExpectedConditions.elementToBeClickable(By.className("toast-title")));
-	    try {
             wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("toast-title")));
-            System.out.println("Thông báo đã biến mất.");
-        } catch (org.openqa.selenium.TimeoutException e) {
-            System.out.println("Không thể chờ toast message biến mất trong thời gian quy định. Vẫn tiếp tục...");
-        }
+          
 	    WebElement a = driver.findElement(By.id("dropdownMenuLink"));
 		a.click();
 			WebElement b = driver.findElement(By.xpath("(//button[text()='Đăng xuất'])[1]"));
 		b.click();
-	WebElement c = driver.findElement(By.xpath("(//button[text()='Đăng xuất'])[2]"));
+	    WebElement c = driver.findElement(By.xpath("(//button[text()='Đăng xuất'])[2]"));
 		c.click();
 	}
 }
