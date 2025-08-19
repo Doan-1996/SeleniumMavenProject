@@ -10,15 +10,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import automation.common.CommonBase;
 
-public class LoginPage_Day13{
+public class LoginPage_Day13 {
 // Tìm locator của element trên page, rồi thực hiện các steps
 	// 1 page là 1 đối tượng cần test cho hệ thống web
 	private WebDriver driver;
 
-
 	public LoginPage_Day13(WebDriver driver) {
-	this.driver = driver;
-}
+		this.driver = driver;
+	}
+
 	// Tìm locator của element trên page, rồi thực hiện các steps, rồi thực hiện các
 	// step cho tính năng
 	public void LoginFunction(String email, String pass) {
@@ -35,7 +35,8 @@ public class LoginPage_Day13{
 			buttonLogin.click();
 		}
 	}
-	public void LoginFunction_BTVNDay13 (String email1, String pass1) {
+
+	public void LoginFunction_BTVNDay13(String email1, String pass1) {
 		WebElement textEmail = driver.findElement(By.id("email"));
 		if (textEmail.isDisplayed()) {
 			textEmail.sendKeys(email1);
@@ -48,18 +49,18 @@ public class LoginPage_Day13{
 		if (buttonLogin.isEnabled()) {
 			buttonLogin.click();
 		}
-		
+
 	}
-	public void Logout1 () {
+
+	public void Logout1() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-	    //wait.until(ExpectedConditions.elementToBeClickable(By.className("toast-title")));
-            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("toast-title")));
-          
-	    WebElement a = driver.findElement(By.id("dropdownMenuLink"));
+		// wait.until(ExpectedConditions.elementToBeClickable(By.className("toast-title")));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("toast-title")));
+		WebElement a = driver.findElement(By.id("dropdownMenuLink"));
 		a.click();
-			WebElement b = driver.findElement(By.xpath("(//button[text()='Đăng xuất'])[1]"));
+		WebElement b = driver.findElement(By.xpath("(//button[text()='Đăng xuất'])[1]"));
 		b.click();
-	    WebElement c = driver.findElement(By.xpath("(//button[text()='Đăng xuất'])[2]"));
+		WebElement c = driver.findElement(By.xpath("(//button[text()='Đăng xuất'])[2]"));
 		c.click();
 	}
 }

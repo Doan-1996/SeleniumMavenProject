@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 17 15:10:29 ICT 2025</td>
+<td>Started on:</td><td>Tue Aug 19 22:32:49 ICT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>216 seconds (216254 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8252 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='automation.testsuit.BTVN_Day13_TestLogin.loginSuccessfully()'><b>loginSuccessfully</b><br>Test class: automation.testsuit.BTVN_Day13_TestLogin</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[text()=&apos;Quản lý người dùng&apos;]
+<td title='automation.testsuit.BTVN_Day14.RegisterAccount()'><b>RegisterAccount</b><br>Test class: automation.testsuit.BTVN_Day14</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[text()=&apos;Danh mục khóa học&apos;]&quot;}
+  (Session info: chrome=139.0.7258.128)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [8b6ae615-a51e-46d8-b1c5-2baec4572770, findElement {using=xpath, value=//p[text()=&apos;Quản lý người dùng&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.3, moz:accessibilityChecks: false, moz:buildID: 20250806102122, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15940, moz:profile: C:\Users\ASUS\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 8b6ae615-a51e-46d8-b1c5-2baec4572770
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1c4b1cac6e80d52b6d27526953352f1, findElement {value=//h2[text()=&apos;Danh mục khóa học&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52495}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52495/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1c4b1cac6e80d52b6d27526953352f1
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -99,7 +100,7 @@ Session ID: 8b6ae615-a51e-46d8-b1c5-2baec4572770
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at automation.testsuit.BTVN_Day13_TestLogin.loginSuccessfully(BTVN_Day13_TestLogin.java:30)
+	at automation.testsuit.BTVN_Day14.RegisterAccount(BTVN_Day14.java:25)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -126,15 +127,16 @@ Session ID: 8b6ae615-a51e-46d8-b1c5-2baec4572770
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1733947537", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1733947537'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[text()=&apos;Quản lý người dùng&apos;]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1196963249", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1196963249'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[text()=&apos;Danh mục khóa học&apos;]&quot;}
+  (Session info: chrome=139.0.7258.128)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [8b6ae615-a51e-46d8-b1c5-2baec4572770, findElement {using=xpath, value=//p[text()=&apos;Quản lý người dùng&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.3, moz:accessibilityChecks: false, moz:buildID: 20250806102122, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15940, moz:profile: C:\Users\ASUS\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 8b6ae615-a51e-46d8-b1c5-2baec4572770
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1c4b1cac6e80d52b6d27526953352f1, findElement {value=//h2[text()=&apos;Danh mục khóa học&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52495}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52495/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1c4b1cac6e80d52b6d27526953352f1
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -149,7 +151,7 @@ Session ID: 8b6ae615-a51e-46d8-b1c5-2baec4572770
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at automation.testsuit.BTVN_Day13_TestLogin.loginSuccessfully(BTVN_Day13_TestLogin.java:30)
+	at automation.testsuit.BTVN_Day14.RegisterAccount(BTVN_Day14.java:25)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -177,32 +179,8 @@ Session ID: 8b6ae615-a51e-46d8-b1c5-2baec4572770
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>14</td>
-<td>automation.testsuit.BTVN_Day13_TestLogin@443118b0</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='automation.testsuit.BTVN_Day13_TestLogin.Logout()'><b>Logout</b><br>Test class: automation.testsuit.BTVN_Day13_TestLogin</td>
-<td></td>
-<td>28</td>
-<td>automation.testsuit.BTVN_Day13_TestLogin@443118b0</td></tr>
-<tr>
-<td title='automation.testsuit.BTVN_Day13_TestLogin.loginFailWithWrongEMail()'><b>loginFailWithWrongEMail</b><br>Test class: automation.testsuit.BTVN_Day13_TestLogin</td>
-<td></td>
-<td>9</td>
-<td>automation.testsuit.BTVN_Day13_TestLogin@443118b0</td></tr>
-<tr>
-<td title='automation.testsuit.BTVN_Day13_TestLogin.loginFailWithWrongPass()'><b>loginFailWithWrongPass</b><br>Test class: automation.testsuit.BTVN_Day13_TestLogin</td>
-<td></td>
-<td>6</td>
-<td>automation.testsuit.BTVN_Day13_TestLogin@443118b0</td></tr>
+<td>2</td>
+<td>automation.testsuit.BTVN_Day14@33d512c1</td></tr>
 </table><p>
 </body>
 </html>
